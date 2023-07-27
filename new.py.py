@@ -1,13 +1,16 @@
 import streamlit as st
+    
+
+logo_link = "https://drive.google.com/uc?export=download&id=1C5ThRLFMJCsTjBMWF3VD5VZmjlqWVlVd"
+st.image(logo_link, width=100)
+
+
+
 
 def main():
-    st.title("Introducing Qties (App of Qeelsthoughts) - Your Gateway to Opportunities and Community Building!")
+    st.title("Introducing Qties (App of Qeelsthoughts)") 
+    st.title("- Your Gateway to Opportunities and Community Building!")
 
-    # Google Drive logo image link
-    logo_link = "https://drive.google.com/uc?export=download&id=1C5ThRLFMJCsTjBMWF3VD5VZmjlqWVlVd"
-    
-    # Display the logo image with a width of 200 pixels
-    st.image(logo_link, caption="Qties App Logo", width=200)
 
 
     st.markdown(
@@ -34,17 +37,15 @@ def main():
         "Join QTies today and embark on a journey of growth, collaboration, and endless possibilities. Whether you're searching for new job opportunities, seeking meaningful connections, or eager to be a part of vibrant communities, our app is here to empower you on your path to success. Download now and take the first step towards a brighter future!"
     )
 
-    st.header("Other Images:")
-    # Google Drive image links for other images
+    st.header("Take a look at our App;")
+   
     image_links = [
-        "https://drive.google.com/uc?export=download&id=16at1Ic-oy3CavRd4c2Vc55feLLlA54Nh",
-        "https://drive.google.com/uc?export=download&id=1llabBUj9gfFC0jQZBPTiEW1GJ0PHCbnF",
-        "https://drive.google.com/uc?export=download&id=1CxDs_8lvPNNqKSwh6mGh_lj3TtN645Ef",
-        "https://drive.google.com/uc?export=download&id=1BefQZDpVgNUR8NYkzRt-rF-QT6GTvpMb",
+    "https://drive.google.com/uc?export=download&id=1D7Ey8FkjWwf_QDM_ppsuShwT8F9u9gAU",
+    "https://drive.google.com/uc?export=download&id=1nqsTFGc_yJm7WFs9BIifXPxMbBi3isrU"
     ]
     
   #  # Display all the other images beside each other in columns
-    cols = st.columns(4)
+    cols = st.columns(2)
     
     for i, col in enumerate(cols):
         col.image(image_links[i], caption="Image", width=200)
@@ -52,4 +53,3 @@ def main():
     
 if __name__ == "__main__":
     main()
-
